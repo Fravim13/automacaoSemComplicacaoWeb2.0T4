@@ -32,7 +32,7 @@ public class TesteWeb {
     @Test
     public void primeiroTeste(){
         String titulo = principalPage.getTitulo();
-        assertEquals("Porque Tempo É Conhecimento", titulo);
+        assertEquals("Porque Tempo É Conhecimento.", titulo);
 
     }
     @Test
