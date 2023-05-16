@@ -8,18 +8,27 @@ public class LoginMap {
     @FindBy(css = "#menuUser")
     public WebElement btnLogin;
 
-    @FindBy(css = "closeBtn loginPopUpCloseBtn")
+    @FindBy(css = ".closeBtn")
     public WebElement btnFechar;
 
-    @FindBy
+    @FindBy(css = ".PopUp")
     public WebElement divFecharModal;
 
-    @FindBy(css = "username")
+    @FindBy(css = "*[name='username']")
     public WebElement inpUserName;
 
-    @FindBy(css = "password")
+    @FindBy(css = "*[name='password']")
     public WebElement inpPassword;
+
+    @FindBy(css = "#sign_in_btnundefined")
     public WebElement btnSignIn;
+
+    @FindBy(css = "*[name='remember_me']")
     public WebElement inpRemember;
+
+    @FindBy(linkText = "CREATE NEW ACCOUNT")
     public WebElement linkCreateAccount;
+
+    @FindBy(css = ".loader")
+    public WebElement divLoader;
 }
